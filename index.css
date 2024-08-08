@@ -48,6 +48,15 @@ body {
     margin-left: 30px;
 }
 
+.navbar-item:hover {
+    background-color: #eee;
+}
+
+.password-protected {
+    cursor: pointer;
+}
+
+
 .main {
     height: calc(100% - 200px);
     font-size: 18px;
