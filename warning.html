@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DG1S</title>
+    <style>
+        .rules {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .rules h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .rules ul {
+            list-style-type: decimal;
+            padding-left: 20px;
+            margin: 0; /* 리스트의 전체 마진 제거 */
+        }
+        .rules li {
+            margin-bottom: 5px; /* 항목 사이의 공백 줄이기 */
+            font-size: 1.1em;
+            line-height: 1.4;
+            display: flex;
+            align-items: baseline; /* 번호와 내용이 수평 정렬되도록 설정 */
+        }
+        .rules li::marker {
+            margin-right: 5px; /* 번호와 내용 사이의 공백 조정 */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img class="navbar-logo" src="logo.png" alt="로고" onclick="javascript:window.location='index.html';">
+        <nav class="navbar">
+            <a class="navbar-item" href="login.html" target="_blank">로그인</a>
+            <a class="navbar-item" href="sasilgogackcentergatenguepssum.html" target="_blank">고객센터</a>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="top">
+            <div class="rules">
+                <h2>야간자율학습 이용 수칙</h2>
+                <ul>
+                    <li>1. 특별실 이동 시 오후 3시 20분까지 신청</li>
+                    <li>2. 8, 9교시 자습 시 이동은 10분 후부터(화장실만 가능)</li>
+                    <li>3. 1차 자습 시 이동은 30분 후 부터(화장실, 교실 가능)</li>
+                    <li>4. 신청 후 본인 이름 자석 위치 바꾸기</li>
+                    <li>5. 장탁 이용 매너 지키기(오래 점유하지 않습니다.)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copy">&copy;2024</div>
+    </footer>
+</body>
+</html>

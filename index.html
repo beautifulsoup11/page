@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DG1S</title>
+    <style>
+        .navbar-item.password-protected {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function checkPasswordForAdmin() {
+            const correctPassword = "1234"; // 비밀번호를 여기에 설정하세요
+            const userPassword = prompt("비밀번호를 입력하세요:");
+
+            if (userPassword === correctPassword) {
+                window.location.href = 'admin.html';
+            } else {
+                alert("비밀번호가 틀렸습니다.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img class="navbar-logo" src="logo.png" onclick="window.location.href='index.html';">
+        <nav class="navbar">
+            <!-- 관리자 탭을 클릭하면 비밀번호 확인 함수 호출 -->
+            <a class="navbar-item password-protected" onclick="checkPasswordForAdmin();">관리자 탭</a>
+            <a class="navbar-item" href="sasilgogackcentergatenguepssum.html" target="_blank">고객센터</a>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="top">
+            <br>
+            <br>
+            <br>
+            아래 메뉴에서 원하시는 작업을 선택해 주세요
+            <br>
+        </div>
+        <br>
+        <button class="bt1" onclick="location.href='teckbyeolsil.html'">특별실 사용신청</button>
+        <br>
+        <button class="bt2" onclick="location.href='simja.html'">심야자습 신청(coming soon!)</button>
+        <br>
+        <button class="bt3" onclick="location.href='warning.html'">선생님 당부 사항</button>
+    </div>
+    <footer class="footer">
+        <div class="copy">&copy;2024 developed by 최재우민준, 유정빈</div>
+    </footer>
+</body>
+</html>

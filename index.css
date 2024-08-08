@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Freesentation';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Freesentation;
+}
+
+.header {
+    width: 80%;
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-item {
+    border-radius: 5px;
+    color: #4e5968;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px 10px;
+    margin-left: 30px;
+}
+
+.navbar-item:hover {
+    background-color: #eee;
+}
+
+.main {
+    height: calc(100% - 200px);
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top {
+    font-size: 200%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    justify-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    height: 20px;
+}
+
+/* 공통 버튼 스타일 */
+button {
+    display: inline-block;
+    font-family: Freesentation, sans-serif; /* 폰트 패밀리 수정 */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px 24px; /* 통일된 패딩 */
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* 기본 버튼 스타일 */
+button {
+    width: 30%;
+    text-align: center; /* 버튼 텍스트 중앙 정렬 */
+}
+
+/* bt1 버튼 스타일 */
+.bt1 {
+    background: blue;
+    color: white;
+}
+
+.bt1:hover {
+    background: darkblue; /* 호버 시 색상 변경 */
+    transform: scale(1.05); /* 호버 시 버튼 확대 */
+}
+
+/* bt2 버튼 스타일 */
+.bt2 {
+    background: white;
+    color: black;
+    border: 2px solid black; /* 흰색 버튼에 테두리 추가 */
+}
+
+.bt2:hover {
+    background: lightgray; /* 호버 시 배경 색상 변경 */
+    transform: scale(1.05); /* 호버 시 버튼 확대 */
+}
+
+/* bt3 버튼 스타일 */
+.bt3 {
+    background: orange;
+    color: white;
+}
+
+.bt3:hover {
+    background: darkorange; /* 호버 시 색상 변경 */
+    transform: scale(1.05); /* 호버 시 버튼 확대 */
+}

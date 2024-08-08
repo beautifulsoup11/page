@@ -1,0 +1,32 @@
+.select-container {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    margin-bottom: 20px; /* 항목 간 간격 조정 */
+}
+
+.select-container label {
+    margin-right: 10px; /* 라벨과 선택 상자 간의 간격 조정 */
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px; /* 원하는 가로 길이로 조정 */
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 10px; /* 라벨과 선택 상자 간의 간격 조정 */
+}
+
+.custom-select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.25);
+}
