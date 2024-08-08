@@ -18,26 +18,34 @@ body {
     justify-content: flex-end;
 }
 
+@media screen and (max-width: 900px) {
+    .navbar-logo {
+      display: none;
+    }
+
+    .navbar {
+        max-width: 70%;
+    }
+} 
+
 .navbar {
     width: 30%;
+    max-width: 70%;
     display: flex;
     justify-content: flex-end;
 }
 
 .navbar-item {
+    display: inline-block;
     border-radius: 5px;
     color: #4e5968;
     text-decoration: none;
     text-align: center;
-    width: auto;
-    overflow: auto;
+    width: 80px;
+    overflow: visible;
     white-space: nowrap;
     padding: 10px 10px;
     margin-left: 30px;
-}
-
-.navbar-item:hover {
-    background-color: #eee;
 }
 
 .main {
