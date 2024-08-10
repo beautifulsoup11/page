@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Freesentation';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Freesentation;
+}
+
+.header {
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-logo img {
+      display: none;
+    }
+    .navbar {
+        max-width: 70%;
+    }
+} 
+
+.navbar {
+    margin-right: 20px;
+    width: 30%;
+    max-width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-logo img {
+    margin-left: 30px;
+}
+
+.navbar-item {
+    display: inline-block;
+    border-radius: 5px;
+    color: #4e5968;
+    text-decoration: none;
+    text-align: center;
+    width: 80px;
+    overflow: visible;
+    white-space: nowrap;
+    padding: 10px 10px;
+    margin-left: 30px;
+}
+
+.navbar-item:hover {
+    background-color: #eee;
+}
+
+.password-protected {
+    cursor: pointer;
+}
+
+.main {
+    height: calc(100vh - 250px);
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    justify-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    height: 20px;
+}
