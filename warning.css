@@ -10,26 +10,48 @@ body {
 }
 
 .header {
-    width: 80%;
     height: 60px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
 }
 
+@media screen and (max-width: 900px) {
+    .navbar-logo img {
+      display: none;
+    }
+    .navbar {
+        max-width: 70%;
+    }
+} 
+
 .navbar {
+    margin-right: 20px;
     width: 30%;
+    max-width: 70%;
     display: flex;
     justify-content: flex-end;
 }
 
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-logo img {
+    margin-left: 30px;
+}
+
 .navbar-item {
+    display: inline-block;
     border-radius: 5px;
     color: #4e5968;
     text-decoration: none;
     text-align: center;
-    width: auto;
-    overflow: auto;
+    width: 80px;
+    overflow: visible;
     white-space: nowrap;
     padding: 10px 10px;
     margin-left: 30px;
@@ -39,20 +61,19 @@ body {
     background-color: #eee;
 }
 
+.password-protected {
+    cursor: pointer;
+}
+
 .main {
-    height: calc(100% - 200px);
+    height: calc(100vh - 250px);
     font-size: 18px;
     line-height: 1.5;
     display: flex;
-    justify-content: flex-start; /* 수평 정렬을 시작으로 변경 */
-    align-items: flex-start;     /* 수직 정렬을 시작으로 변경 */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
-
-    .top {
-        font-size: 150%;
-        margin-bottom: 20px;
-    }
 
 .footer {
     position: fixed;
@@ -66,4 +87,24 @@ body {
     font-size: 15px;
     padding: 5px;
     height: 20px;
+}
+
+.rules {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.rules h2 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.rules li {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    line-height: 1.4;
+    display: flex;
+    align-items: baseline;
 }

@@ -2,25 +2,26 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="teckbyeolsil.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DG1S</title>
     </head>
     <body>
         <header class="header">
-            <img class="navbar-logo" src="logo.png" onclick="javascript:window.location='index.html';">
+            <div class="navbar-logo">
+                <a href="index.html" target="_blank"><img src="logo.png"/></a>
+            </div>
             <nav class="navbar">
-                <a class="navbar-item" href="login.html" target="_blank">로그인</a>
-                <a class="navbar-item" href="sasilgogackcentergatenguepssum.html" target="_blank">고객센터</a>
+                <!-- 관리자 탭을 클릭하면 비밀번호 확인 함수 호출 -->
+                <a class="navbar-item password-protected" onclick="checkPasswordForAdmin();">관리자 페이지</a>
+                <a class="navbar-item" href="ggct.html" target="_blank">고객센터</a>
             </nav>
         </header>
         <div class = "main">
-            <div class = "top">
-                <h2>특별실 이용 희망 시간과 장소를 선택하세요</h2>
-                <form action="submit.php" method="post">
-                    <div class="select-container">
-                    <label for="rytl8">8교시 : </label>
+            <h2>특별실 이용 희망 장소를 선택해 주세요.</h2>
+            <form class="form" action="submit.php" method="post">
+                <div class="select-container">
+                    <label for="rytl8">8교시: </label>
                     <select class="custom-select" id="rytl8" name="rytl8">
                         <!-- 옵션 리스트 -->
                         <option value="없음">없음</option>
@@ -58,9 +59,8 @@
                         <!-- 나머지 옵션 추가 -->
                     </select>
                 </div>
-                    <br><br>
-                    <div class="select-container">
-                    <label for="rytl9">9교시 : </label>
+                <div class="select-container">
+                    <label for="rytl9">9교시: </label>
                     <select class="custom-select" id="rytl9" name="rytl9">
                         <!-- 옵션 리스트 -->
                         <option value="없음">없음</option>
@@ -98,9 +98,8 @@
                         <!-- 나머지 옵션 추가 -->
                     </select>
                 </div>
-                    <br><br>
-                    <div class="select-container">
-                    <label for="ckdiwk1">1차 야자 : </label>
+                <div class="select-container">
+                    <label for="ckdiwk1">1차 야자: </label>
                     <select class="custom-select" id="ckdiwk1" name="ckdiwk1">
                         <!-- 옵션 리스트 -->
                         <option value="없음">없음</option>
@@ -137,14 +136,12 @@
                         <option value="기타(그 외)">기타(그 외)</option>
                         <!-- 나머지 옵션 추가 -->
                     </select>
-                    </div>
-                    <br><br>
-                    <button type="submit">제출</button>
-                </form>
-            
-            </div>
+                </div>
+                <button type="submit">제출</button>
+            </form>
+        </div>
         <footer class="footer">
-            <div class="copy">&copy;2024</div>
+            <div class="copy">&copy; 2024 developed by 최재우민준, 유정빈</div>
         </footer>
     </body>
 </html>

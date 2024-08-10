@@ -1,20 +1,116 @@
+@font-face {
+    font-family: 'Freesentation';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Freesentation;
+}
+
+.header {
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-logo img {
+      display: none;
+    }
+    .navbar {
+        max-width: 70%;
+    }
+} 
+
+.navbar {
+    margin-right: 20px;
+    width: 30%;
+    max-width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-logo img {
+    margin-left: 30px;
+}
+
+.navbar-item {
+    display: inline-block;
+    border-radius: 5px;
+    color: #4e5968;
+    text-decoration: none;
+    text-align: center;
+    width: 80px;
+    overflow: visible;
+    white-space: nowrap;
+    padding: 10px 10px;
+    margin-left: 30px;
+}
+
+.navbar-item:hover {
+    background-color: #eee;
+}
+
+.password-protected {
+    cursor: pointer;
+}
+
+
+.main {
+    height: calc(100vh - 250px);
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    justify-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    height: 20px;
+}
+
 .select-container {
     display: flex;
-    align-items: center; /* 수직 중앙 정렬 */
-    justify-content: center; /* 수평 중앙 정렬 */
-    margin-bottom: 20px; /* 항목 간 간격 조정 */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .select-container label {
-    margin-right: 10px; /* 라벨과 선택 상자 간의 간격 조정 */
+    margin-right: 10px;
 }
 
 .custom-select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 200px; /* 원하는 가로 길이로 조정 */
-    padding: 10px 12px;
+    width: 200px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
@@ -22,7 +118,6 @@
     color: #333;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 10px; /* 라벨과 선택 상자 간의 간격 조정 */
 }
 
 .custom-select:focus {
