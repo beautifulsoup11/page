@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DG1S</title>
         <script src="admin.js"></script>
@@ -19,12 +20,12 @@
             </nav>
         </header>
         <div class="main">
-            <button class="bt1" onclick="window.open('teckbyeolsil.html')">특별실 사용 신청</button>
+            <button class="bt1" onclick="const d = new Date();if (d.getHours() <= 15 && d.getMinutes() <= 20) { window.open('teckbyeolsil.html') } else { alert('신청할 수 있는 시간이 아닙니다.') }">특별실 사용 신청</button>
             <button class="bt2" onclick="window.open('simja.html')">심야 자습 신청(coming soon)</button>
             <button class="bt3" onclick="window.open('warning.html')">자습실 이용 수칙</button>
         </div>
         <footer class="footer">
-            <div class="copy">&copy; 2024 developed by 최재우민준, 유정빈</div>
+            <div class="copy">&copy; 2024 developed by DG1S 14th 최재우민준, 유정빈</div>
         </footer>
     </body>
 </html>
