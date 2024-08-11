@@ -5,19 +5,7 @@
         <link rel="stylesheet" href="index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DG1S</title>
-        <script>
-            function checkPasswordForAdmin() {
-                const correctPassword = "1234"; // 비밀번호를 여기에 설정하세요
-                const userPassword = prompt("비밀번호를 입력하세요:");
-
-                if (userPassword == correctPassword) {
-                    window.open('admin.html');
-                } else if (userPassword == null) {
-                } else {
-                    alert("비밀번호가 틀렸습니다.");
-                }
-            }
-        </script>
+        <script src="admin.js"></script>
     </head>
     <body>
         <header class="header">
