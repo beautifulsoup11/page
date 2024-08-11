@@ -8,7 +8,7 @@
         <title>DG1S</title>
         <script src="admin.js"></script>
     </head>
-    <body>
+    <body onload="var d = new Date();if (!(d.getHours() <= 15 && d.getMinutes() <= 20 && 1 <= d.getDay() && d.getDay() <= 5)) { alert('신청할 수 있는 시간이 아닙니다.'); window.close(); }">
         <header class="header">
             <div class="navbar-logo">
                 <a href="index.html" target="_blank"><img src="logo.png"/></a>
