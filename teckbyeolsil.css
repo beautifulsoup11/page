@@ -68,19 +68,9 @@ body {
 
 .main {
     height: calc(100vh - 250px);
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin: 20px;
 }
 
 .footer {
@@ -98,9 +88,14 @@ body {
 }
 
 .select-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.reason {
+    margin-bottom: 20px;
+}
+
+.hb {
     margin-bottom: 20px;
 }
 
@@ -110,13 +105,34 @@ body {
 
 .custom-select {
     width: 200px;
-    padding: 10px;
+    height: 30px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: #fff;
-    font-size: 16px;
     color: #333;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reasoninput {
+    resize: none;
+    width: 50vw;
+    height: 3em;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hbinput {
+    width: auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -124,4 +140,23 @@ body {
     border-color: #007bff;
     outline: none;
     box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.25);
+}
+
+.reasoninput:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.25);
+}
+
+.hbinput:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.25);
+}
+
+.submit {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 10px;
 }

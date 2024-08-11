@@ -19,8 +19,8 @@
             </nav>
         </header>
         <div class = "main">
-            <h2>특별실 이용 희망 장소를 선택해 주세요.</h2>
             <form class="form" action="submit.php" method="post">
+                <h2>특별실 이용 희망 장소와 사유를 입력해 주세요.</h2>
                 <div class="select-container">
                     <label for="rytl8">8교시: </label>
                     <select class="custom-select" id="rytl8" name="rytl8">
@@ -138,7 +138,15 @@
                         <!-- 나머지 옵션 추가 -->
                     </select>
                 </div>
-                <button type="submit">제출</button>
+                <div class="reason">
+                    <label for="reasoninput">사유<br></label>
+                    <textarea class="reasoninput" placeholder="사유를 입력해 주세요."></textarea>
+                </div>
+                <div class="hb">
+                    <label for="hbinput">학번/이름<br></label>
+                    <input class="hbinput" placeholder="학번과 이름을 입력해 주세요.">
+                </div>
+                <button class="submit" type="submit">신청하기</button>
             </form>
         </div>
         <footer class="footer">
